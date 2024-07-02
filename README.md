@@ -34,7 +34,8 @@ python SSHScout.py 91.191.200.30 proxy.domain.com
 
 ### Output
 
-```bash
+The script will provide a summary of the scanned targets:
+```
 +------------------+-----------------------------------------+-------------------------------+
 |    Domain/IP     |               SSH Banner                |              CVE              |
 +------------------+-----------------------------------------+-------------------------------+
