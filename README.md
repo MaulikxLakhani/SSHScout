@@ -2,7 +2,7 @@
 
 ## 📜 Description
 
-SSHScout is a lightweight, efficient tool designed to identify servers running SSH. Designed to be your go-to tool for SSH banner grabbing, combining speed, accuracy, and ease of use. This script facilitates rapid scanning of multiple IP addresses, domain names, and CIDR network ranges to detect SSH server version and banner. Whether you're managing a large network or conducting a targeted security audit, SSHPeek provides the critical information you need to keep your systems secure and up-to-date.
+SSHScout is a lightweight, efficient tool designed to identify servers running SSH. Designed to be your go-to tool for SSH banner grabbing, combining speed, accuracy, and ease of use. This script facilitates rapid scanning of multiple IP addresses, domain names, and CIDR network ranges to detect SSH server version and banner. Whether you're managing a large network or conducting a targeted security audit, SSHScout provides the critical information you need to keep your systems secure and up-to-date.
 
 ## 🌟 Features
 
