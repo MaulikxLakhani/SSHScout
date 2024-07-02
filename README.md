@@ -1,4 +1,4 @@
-# SSHScout - SSH Banner Grabber
+# SSHScout - SSH Banner Grab and Vulnerability Check
 
 ## 📜 Description
 
@@ -6,16 +6,16 @@ SSHScout is a lightweight, efficient tool designed to identify servers running S
 
 ## 🌟 Features
 
-- **Rapid Scanning**: Quickly scan multiple IP addresses, domain names, and CIDR ranges for the CVE-2024-6387 vulnerability.
-- **Banner Retrieval**: Efficiently retrieves SSH banners without authentication.
-- **Multi-threading**: Uses threading for concurrent checks, significantly reducing scan times.
-- **Detailed Output**: Provides clear, emoji-coded output summarizing scan results.
 - **Port Check**: Identifies closed ports and provides a summary of non-responsive hosts.
+- **Banner Retrieval**: Efficiently retrieves SSH banners without authentication.
+- **Vulnerability Check**: Scan multiple IP addresses, domain names for the CVE-2024-6387 and other vulnerabilities.
+- **Multi-threading**: Uses threading for concurrent checks, significantly reducing scan times.
+- **Detailed Output**: Provides clear output summarizing scan results.
 
 ## 🚀 Usage
 
 ```bash
-python SSHScout.py <targets> [--port PORT]
+python SSHScout.py <targets>
 ```
 
 ### Examples
@@ -32,41 +32,13 @@ python SSHScout.py 192.168.1.1
 python SSHScout.py 192.168.1.1 example.com 192.168.1.2
 ```
 
-#### CIDR Range
-
-```bash
-python SSHScout.py 192.168.1.0/24
-```
-
-#### With Custom Port
-
-```bash
-python SSHScout.py 192.168.1.1 example.com --port 2222
-```
-
 ### Output
 
 The script will provide a summary of the scanned targets:
 
 * 🚨 Vulnerable: Servers running a vulnerable version of OpenSSH.
 * 🛡️ Not Vulnerable: Servers running a non-vulnerable version of OpenSSH.
-* 🔒 Closed Ports: Count of servers with port 22 (or specified port) closed.
-* 📊 Total Scanned: Total number of targets scanned.
-
-```text
-🛡️ Servers not vulnerable: 1
-
-   [+] Server at 157.90.125.31 (running SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.11)
-
-🚨 Servers likely vulnerable: 2
-
-   [+] Server at 4.231.170.121 (running SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10)
-   [+] Server at 4.231.170.122 (running SSH-2.0-OpenSSH_9.2p1 Debian-2+deb12u2)
-
-🔒 Servers with port 22 closed: 254
-
-📊 Total scanned targets: 257
-```
+* 🔒 Closed Ports: Count of servers with port 22 closed.
 
 ## 📚 References
 [Qualys Blog on regreSSHion Vulnerability](https://blog.qualys.com/vulnerabilities-threat-research/2024/07/01/regresshion-remote-unauthenticated-code-execution-vulnerability-in-openssh-server)
