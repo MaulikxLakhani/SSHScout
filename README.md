@@ -30,20 +30,21 @@ python SSHScout.py 192.168.1.1
 
 ```bash
 python SSHScout.py 91.191.200.30 proxy.domain.com
+```
+
+### Output
+
+```bash
 +------------------+-----------------------------------------+-------------------------------+
 |    Domain/IP     |               SSH Banner                |              CVE              |
 +------------------+-----------------------------------------+-------------------------------+
 | proxy.domain.com | SSH-2.0-OpenSSH_7.9p1 Debian-10+deb10u4 |        CVE-2018-20685         |
 |  91.195.204.40   |      SSH-2.0-OpenSSH_8.5p1-hpn15v2      | CVE-2021-28041, CVE-2024-6387 |
 +------------------+-----------------------------------------+-------------------------------+
-
 ```
-
-### Output
-
 The script will provide a summary of the scanned targets:
 
-* 🚨 Vulnerable: Servers running a vulnerable version of OpenSSH.
+* 🚨 Vulnerable: Servers running a vulnerable version of OpenSSH with CVE ID.
 * 🛡️ Not Vulnerable: Servers running a non-vulnerable version of OpenSSH.
 * 🔒 Closed Ports: Count of servers with port 22 closed.
 
