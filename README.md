@@ -1,8 +1,8 @@
-# CVE-2024-6387_Check
+# SSHScout - SSH Banner Grabber
 
 ## 📜 Description
 
-CVE-2024-6387_Check is a lightweight, efficient tool designed to identify servers running vulnerable versions of OpenSSH, specifically targeting the recently discovered `regreSSHion` vulnerability (CVE-2024-6387). This script facilitates rapid scanning of multiple IP addresses, domain names, and CIDR network ranges to detect potential vulnerabilities and ensure your infrastructure is secure.
+SSHScout is a lightweight, efficient tool designed to identify servers running SSH. Designed to be your go-to tool for SSH banner grabbing, combining speed, accuracy, and ease of use. This script facilitates rapid scanning of multiple IP addresses, domain names, and CIDR network ranges to detect SSH server version and banner. Whether you're managing a large network or conducting a targeted security audit, SSHPeek provides the critical information you need to keep your systems secure and up-to-date.
 
 ## 🌟 Features
 
@@ -15,7 +15,7 @@ CVE-2024-6387_Check is a lightweight, efficient tool designed to identify server
 ## 🚀 Usage
 
 ```bash
-python CVE-2024-6387_Check.py <targets> [--port PORT]
+python SSHScout.py <targets> [--port PORT]
 ```
 
 ### Examples
@@ -23,25 +23,25 @@ python CVE-2024-6387_Check.py <targets> [--port PORT]
 #### Single IP
 
 ```bash
-python CVE-2024-6387_Check.py 192.168.1.1
+python SSHScout.py 192.168.1.1
 ```
 
 #### Multiple IPs and Domains
 
 ```bash
-python CVE-2024-6387_Check.py 192.168.1.1 example.com 192.168.1.2
+python SSHScout.py 192.168.1.1 example.com 192.168.1.2
 ```
 
 #### CIDR Range
 
 ```bash
-python CVE-2024-6387_Check.py 192.168.1.0/24
+python SSHScout.py 192.168.1.0/24
 ```
 
 #### With Custom Port
 
 ```bash
-python CVE-2024-6387_Check.py 192.168.1.1 example.com --port 2222
+python SSHScout.py 192.168.1.1 example.com --port 2222
 ```
 
 ### Output
