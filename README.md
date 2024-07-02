@@ -50,5 +50,5 @@ The script will provide a summary of the scanned targets:
 * 🔒 Closed Ports: Count of servers with port 22 closed.
 
 ## 📚 References
-* [Qualys blog on regreSSHion Vulnerability](https://blog.qualys.com/vulnerabilities-threat-research/2024/07/01/regresshion-remote-unauthenticated-code-execution-vulnerability-in-openssh-server)\
+* [Qualys blog on regreSSHion Vulnerability](https://blog.qualys.com/vulnerabilities-threat-research/2024/07/01/regresshion-remote-unauthenticated-code-execution-vulnerability-in-openssh-server)
 * [Wiz blog on Detect and mitigate of CVE-2024-6387](https://www.wiz.io/blog/cve-2024-6387-critical-rce-openssh)
