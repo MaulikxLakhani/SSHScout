@@ -1,8 +1,8 @@
+import csv
 import socket
 import argparse
-from tabulate import tabulate
 import threading
-import csv
+from tabulate import tabulate
 
 # Comprehensive CVE dictionary for OpenSSH
 CVE_DICT = {
